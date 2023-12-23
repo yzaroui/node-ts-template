@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",     // Inherit settings from the base configuration
+  "compilerOptions": {
+    "outDir": "./build",            // Redirect output structure to a different directory
+    "declaration": true,            // Generate corresponding '.d.ts' file
+    "sourceMap": false,             // Do not generate source maps
+    "removeComments": true,         // Remove comments from output
+    "noEmitOnError": true,          // Do not emit outputs if any errors were reported
+    "strictNullChecks": true,       // Enable strict null checks
+    "noUnusedLocals": true,         // Report errors on unused locals
+    "noUnusedParameters": true,     // Report errors on unused parameters
+    "noImplicitReturns": true       // Report error when not all code paths in function return a value
+  },
+  "exclude": ["node_modules", "src/**/*.test.ts", "src/**/*.spec.ts"] // Exclude tests and node_modules from production build
+}

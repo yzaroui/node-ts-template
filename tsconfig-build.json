@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.json",     // Inherit settings from the base configuration
   "compilerOptions": {
-    "outDir": "./build",            // Redirect output structure to a different directory
+    "outDir": "./dist",             // Redirect output structure to a different directory
     "declaration": true,            // Generate corresponding '.d.ts' file
     "sourceMap": false,             // Do not generate source maps
     "removeComments": true,         // Remove comments from output
